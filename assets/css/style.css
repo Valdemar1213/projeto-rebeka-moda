@@ -13,6 +13,109 @@
   --fonte-destaque: "Merienda", cursive;
 }
 
-h3 {
-  font-family: "'Merienda', cursive;";
+body {
+  background-image: url('../img/fundo-main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* HEADER */
+
+#header {
+  background-color: #e7aae4;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+#header p {
+  font-family: var(--fonte-destaque);
+  margin-bottom: 0;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 150px;
+  margin-right: 15px;
+}
+
+/* NAVBAR */
+#navbar {
+  padding: 10px;
+  margin: 10px auto;
+  border-bottom: 1px solid #141414;
+}
+
+#navbar a {
+  width: 80px;
+  color: #444;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: #c1b696;
+}
+
+/* SLIDER */
+.imgtamanho {
+  height: 600px;
+}
+
+/* BODY */
+
+.sobrenos {
+  background-color: var(--cor1);
+  padding: 20px;
+}
+
+/* CARDS */
+
+#produtos {
+  padding: 2em 0;
+}
+
+#produtos .row {
+  margin: 0;
+}
+
+#produtos .col-md-3 {
+  padding: 0;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .title {
+    text-align: left;
+  }
+}
+
+.card {
+  text-align: center;
+  border-radius: 0;
+}
+
+.card img {
+  width: 300px;
+  height: 250px;
+  margin: 2em auto;
+}
+
+.card .card-category {
+  font-size: .8rem;
+}
+
+.card .card-text {
+  margin: 2em 0;
+  font-weight: bold;
 }

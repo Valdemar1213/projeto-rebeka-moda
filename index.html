@@ -1,70 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-  <title>Rebeka Modas</title>
-  <!-- CSS Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <!-- JS Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <!-- CSS do Projeto -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Fonte Destaque -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-danger-subtle">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-6 align-self-right"><img src="assets/img/logomarca-semfundo.png" alt="Rebeka Modas"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Rebeka Modas</title>
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- CSS do Projeto -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Fonte Destaque -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row" id="header">
+        <div id="logo-container">
+          <img
+            src="assets/img/logomarca-semfundo.png"
+            alt="Rebeka Modas"
+            id="logo"
+          />
         </div>
+        <p>Loja de roupas e acessórios em geral</p>
+      </header>
+      <nav id="navbar" class="container">
+        <div class="row justify-content-center">
+          <a href="#carousel">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#secao-4">Contato</a>
+        </div>
+      </nav>
     </div>
-    <nav class="navbar navbar-expand-lg bg-danger-subtle">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
+    <!-- Slider -->
+    <div class="container mb-2">
+      <div class="col-12">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              class="active"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+              aria-current="true"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+              aria-current="true"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/rebeka-modas-500-630.png"
+                alt="Descrição 1"
+                class="d-block w-100 imgtamanho"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/rebeka-modas-galeria-01.png"
+                alt="Descrição 2"
+                class="d-block w-100 imgtamanho"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/rebeka-modas-galeria-02.png"
+                alt="Descrição 3"
+                class="d-block w-100 imgtamanho"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <div class="container-sm mt-3">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="assets/img/rebeka-modas-500-630.png" alt="Foto loja Rebeka Modas">
+    </div>
+    <!-- Sobre nós -->
+    <div id="sobre" class="container mb-4 sobrenos">
+      <div class="col-12 col-md-6">
+        <h1><u>Sobre nós</u></h1>
+        <h4>Somos uma loja de roupas e acessórios localizada em Candeias, Jaboatão dos Guararapes-PE.</h4>
+        <p>A loja Rebeka Modas é referência em moda, acessórios, brinquedos, papelaria, bolsas em geral, etc</p>
+        <h4><u>Horário de Atendimento</u></h4>
+        <p>Manhã: 09:00 às 12:00</p>
+        <p>Tarde: 14:00 às 18:30</p>
+        <h6>Venha conferir nossos produtos!!</h6>
+      </div>
+    </div>
+    <div class="container" id="produtos">
+      <h2 class="title primary-color">Produtos</h2>
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/roupas-mas-fem.png" class="card-img-top img-fluid" alt="Roupas masculinas e femininas">
+            <div class="card-body">
+              <p class="card-category secondary-color">Roupas masculinas e femininas</p>
+              <h5 class="card-title">Roupas em geral</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/bolsas-em-geral.jpg" class="card-img-top img-fluid" alt="Bolsas em geral">
+            <div class="card-body">
+              <p class="card-category secondary-color">Bolsas masculinas e femininas</p>
+              <h5 class="card-title">Bolsas em geral</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/papelaria.png" class="card-img-top img-fluid" alt="Papelaria">
+            <div class="card-body">
+              <p class="card-category secondary-color">Produtos de papelaria</p>
+              <h5 class="card-title">Papelaria em geral</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/oculos-escuros.jpg" class="card-img-top img-fluid" alt="Óculos escuros">
+            <div class="card-body">
+              <p class="card-category secondary-color">Óculos escuros masculinos e femininos de todo tipo e estilo</p>
+              <h5 class="card-title">Óculos escuros</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/perfumaria.jpg" class="card-img-top img-fluid" alt="Perfumaria">
+            <div class="card-body">
+              <p class="card-category secondary-color">Perfumaria em geral, com ponto de venda de Boticário e Natura</p>
+              <h5 class="card-title">Perfumaria em geral</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/brinquedos-em-geral.jpg" class="card-img-top img-fluid" alt="Brinquedos">
+            <div class="card-body">
+              <p class="card-category secondary-color">Brinquedos para crianças de qualquer idade</p>
+              <h5 class="card-title">Brinquedos em geral</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/roupas-intimas.png" class="card-img-top img-fluid" alt="Roupas íntimas">
+            <div class="card-body">
+              <p class="card-category secondary-color">Roupas íntimas masculinas e femininas</p>
+              <h5 class="card-title">Roupas íntimas e Moda Praia</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/acessorios-celular.jpg" class="card-img-top img-fluid" alt="Acessórios para celular">
+            <div class="card-body">
+              <p class="card-category secondary-color">Acessórios para celular</p>
+              <h5 class="card-title">Acessórios para celular em geral</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/pedasorte.png" class="card-img-top img-fluid" alt="Pernambuco da sorte">
+            <div class="card-body">
+              <p class="card-category secondary-color">Pernambuco da sorte</p>
+              <h5 class="card-title">Ponto de venda do Pernambuco da Sorte</h5>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container-sm mt-2 bg-danger p-3">
-        <div class="row">
-          <div class="col-sm-12">
-            <h3>A sua loja de roupas e acessórios em Candeias.</h3>
-            <p>Inaugurada a quase 5 anos, a Rebeka Modas vem aprimorando seus conceitos a cada novo cliente.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-
-  </footer>
-</body>
+    </div>
+  </body>
 </html>
